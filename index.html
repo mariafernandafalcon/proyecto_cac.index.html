@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto codo a codo</title>
+
+    <link rel="stylesheet" href="../proyecto_cac/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../proyecto_cac/css/estilos.final.css">
+    <link rel="shortcut icon" href="../proyecto_cac/favicon.ico">
+
+    
+
+</head>
+<body>
+    
+<!--navegador-    le falta corregir el margen!-->
+<header" >  
+    <nav class="navbar navbar-expand-lg navbar-light bgColorGris  ">
+        <div class="container-fluid">            
+            <img src="../proyecto_cac/assets/imagenes/codoacodo.png" alt="logo" width="100"> 
+         <a class="navbar-brand text-white" href="#">Conf. Bs. As </a>
+         
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificado">
+               <li class="nav-item">
+                <a class="nav-link active text-white  " aria-current="page" href="#">   La Conferencia</a></li>
+                <li class="nav-item"><a  class="nav-link text-muted  " href="#../proyecto_cac/pages/los_oradores.html">Los Oradores</a></li>
+                <li class="nav-item"> <a  class="nav-link text-muted  " href="#../proyecto_cac/pages/lugaryfecha.html">El lugar y la Fecha</a></li>
+                <li class="nav-item"> <a  class="nav-link text-muted  " href="#../proyecto_cac/pages/contacto.html">Conviértete en Orador</a></li>
+                            
+                <li class=" nav-item "> <a  class="nav-link  text-success  " href="../proyecto_cac/pages/comprartickets.html">Comprar Tickets</a></li>
+                
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+     
+     
+      
+
+
+<section class="position-relative " >
+         <!--carusel-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner brilloMitad">
+            <div class="carousel-item active ">
+                <img src="../proyecto_cac/assets/imagenes/ba1.jpg" class="d-block w-100  " alt="Imagen de Buenos Aires Palacio de Aguas Argentinas">
+            </div>
+            <div class="carousel-item">
+                <img src="../proyecto_cac/assets/imagenes/ba2.jpg" class="d-block w-100 " alt=   "imagen2">
+            </div>
+            <div class="carousel-item">
+                <img src="../proyecto_cac/assets/imagenes/ba2.jpg" class="d-block w-100 " alt=" imagen3">
+            </div>
+            </div>
+        </div> 
+        <div class="position-absolute  text-white posicionamiento  ">  <!--no puedo corregir el @media   nose porque!!-->
+          
+            
+                <h1>Conf. Bs As </h1>
+        
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir <br> con nuestra comunidad el conocimiento y 
+             la experiencia de kis expertos que estan creando el futuro <br> de internet. Ven a conocer a miembros del
+             evento, a otros estudiantes  de Codo  a Codo y los oradores <br> de primer nivel que tenemos para ti.
+              Te esperamos!    </p>
+              
+              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+              <button type="button" class="btn btn-success">Comprar Tickets</button>
+      
+
+
+        </div>
+</section>
+
+
+<!--tarjetas-->
+<section id="../proyecto_cac/pages/los_oradores.html">
+
+    <p class="tituloTarjetas" >CONOCE A LOS </p>
+    <h2 class="tituloTarjetas">ORADORES</h2>
+    
+
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../proyecto_cac/assets/imagenes/steve.jpg" class="card-img-top" alt="foto steve jobs" height="66.5%">
+            <div class="card-body">
+
+                <button type="button" class="btn btn-warning">Java Script</button>
+                <button type="button" class="btn btn-primary">React</button> 
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Nació el 24 de febrero de 1955 en San Francisco, California. Fue un empresario multimillonario, conocido por ser cofundador y presidente ejecutivo de Apple, así como creador de Pixar.</p>
+                
+              
+            
+            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../proyecto_cac/assets/imagenes/bill.jpg" class="card-img-top" alt="foto Bill Gates">
+            <div class="card-body">
+
+                <button type="button" class="btn btn-warning">Java Script</button>
+              <button type="button" class="btn btn-primary">React</button>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">(Seattle, Washington; 28 de octubre de 1955) es un empresario, informático y filántropo estadounidense, conocido por haber creado y fundado junto con Paul Allen, la empresa Microsoft.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../proyecto_cac/assets/imagenes/ada.jpeg" class="card-img-top" alt="Foto Ada Lovelace">
+            <div class="card-body">
+
+                <button type="button" class="btn btn-secondary">Negocios</button>
+                <button type="button" class="btn btn-danger">Startups</button>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">la primera programadora de la historia. Hija del famoso poeta Lord Byron, nació en 1815 y desafió las limitaciones que imponía la lógica victoriana para la mujer. Creó un algoritmo -inédito en ese entonces-pensado para ser procesado por una máquina.</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+</section>
+
+
+<!--pantalla dividida-->
+<section class="pantallaDividiva" id="../proyecto_cac/pages/lugaryfecha.html">
+
+    <div class="imagenIzq">  </div>
+
+    <div class="contenidoDer">
+            <h4>Bs As - Octubre</h4>
+            <p>Buenos Aires es la provincia y localidad más grande   del estado de Argentina, 
+                en los <br> Estados Unidos. Honolili es la más sureña de estre  las principales ciudades <br> estadounidendes. 
+            Aunque el nombre de Honolili se refiere al área <br> urbana en la costa sureste de la isla de Oahu, la 
+            ciudad y el condado de Honolulu han <br> ormado una ciudad-condado > consolidada que cubre
+            toda la ciudad <br> (aproximadamente 600 km2 de superficie). </p>
+            <button type="button" class="btn btn-outline-light">Conoce Más</button>
+            
+      
+       
+        
+        
+     </div>
+        
+
+</section>
+
+
+<!--formulario-->
+
+    <section class="centrarFormulario" id="../proyecto_cac/pages/contacto.html" >
+
+    <div>
+
+        <p class="contenedorTitulo" >CONVIÉRTETE EN UN  </p>
+        <H2 class="contenedorTitulo" >ORADOR</H2>
+    
+       <p class="contenedorTitulo"> Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+      
+    </div>
+    
+    <div class="contenedorTitulo">
+        <form action="texto">
+           
+    
+        <label for="Nombre" aria-placeholder="Nombre" class="nombre"> </label>
+        <input type="nombre " name="" id="Nombre" placeholder="Nombre" >
+    
+    
+        <label for="Apellido"></label>
+        <input type="Apellido"  placeholder="Apellido">
+    
+
+
+        <div class="col-12 ">
+        <label for="inputAddress" class="form-label">¿Sobre qué quieres hablar?</label>
+        <input type=" ¿Sobre qué quieres hablar?" class="form-control" >
+        </div>
+
+                 <p>Recuerda incluir un título para tu charla</p>
+
+            <div class="col-12">
+            <button type="button" class="btn btn-success">Enviar</button>
+      
+             </div> 
+
+     
+    
+         </div>
+   
+
+    </section>
+
+<!--footer-->
+
+    
+  
+
+<footer class="colorFooter">
+
+     <div class="container">
+             <div class="row">
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/Contactanós.html">Contactanós</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/Prensa.html">Prensa</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/Conferencias.html">Conferencias</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/TerminosyCondiciones.html">Terminos y Condiciones</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/Privacidad.html">Privacidad</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../proyecto_cac/pages/Estudiantes.html">Estudiantes</a></div>
+    
+            </div>
+    
+            
+
+
+
+
+        </div>
+</footer>
+  
+  
+  
+
+</header>
+    
+
+<script src="../proyecto_cac/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
