@@ -1,4 +1,5 @@
 .bgColorGris{background-color: rgb(78, 78, 75);}
+
 .justificado{ 
     display: flex;
     justify-content: flex-end;
@@ -7,17 +8,16 @@
   filter: brightness(40%);
 }
     
-   .posicionamiento{
+.posicionamiento{
     top: 20%;
     right: 10%;
   left: 40%;
   text-align: right;
-
   font-size: 18px
    }
 
 
-    .tituloTarjetas{
+.tituloTarjetas{
         
        text-align: center;
     }
@@ -76,7 +76,7 @@ height: 50vh;
 
 
 .colorFooter{
-background-color: rgb(44, 44, 99);
+background-color: rgb(44, 44, 99);}
 
 
 
@@ -85,29 +85,16 @@ background-color: rgb(44, 44, 99);
 
 
    
-  .posicionamiento{
-        top: 0%;
-        right: 0%;
-        left: 0%;
-        text-align: right;
-    
-         font-size: 10px
-        }
+  
    
-
-
+.posicionamiento{
+    top:20%;
+    left:20%;
+    right:20%;
+    bottom:20%;
+        
+    font-size: 0.8rem;
 }
 
-
-    
-    
-
-
-
-
-
-  
-
-
-
+}
 
