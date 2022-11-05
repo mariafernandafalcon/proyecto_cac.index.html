@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprar tickets</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+
+
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bgColorGris  ">
+        <div class="container-fluid">            
+            <img src="../assets/imagenes/codoacodo.png" alt="logo" width="100"> 
+         <a class="navbar-brand text-white" href="#">Conf. Bs. As </a>
+         
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificado">
+               <li class="nav-item">
+                <a class="nav-link active text-white  " aria-current="page" href="#">   La Conferencia</a></li>
+                <li class="nav-item"><a  class="nav-link text-muted  " href="../index.html">Los Oradores</a></li>
+                <li class="nav-item"> <a  class="nav-link text-muted  " href="../index.html">El lugar y la Fecha</a></li>
+                <li class="nav-item"> <a  class="nav-link text-muted  " href="../index.html">Conviértete en Orador</a></li>
+                            
+                <li class=" nav-item "> <a  class="nav-link  text-success  " href="./comprartickets.html">Comprar Tickets</a></li>
+                
+              
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+
+
+
+    <div>
+
+        <div class="card-group">
+          <div class="text-center d-flex justify-content-center me-auto ms-auto" >
+            <div class="card border-primary ">
+              <div class="card-body">
+                <h5 class= "text-black">Estudiante</h5>
+                <p class="card-text p-2">Tienen un descuento</p>
+                <p class="card-text fs-4 fw-bold ">80%</p>
+                <p class="card-text p-2"><small class="text-muted">* Presentar documentacion</small></p>
+              </div>
+            </div>
+            <div class="card border-info ">
+              <div class="card-body">
+                <h5 class=" text-black">Trainee</h5>
+                <p class="card-text p-2">Tienen un descuento</p>
+                <p class="card-text fs-4 fw-bold">50%</p>
+                <p class="card-text p-2"><small class="text-muted">* Presentar documentacion</small></p>
+              </div>
+            </div>
+            <div class="card border-warning ">
+              <div class="card-body">
+                <h5 class=" text-black">Junior</h5>
+                <p class="card-text p-2">Tienen un descuento</p>
+                <p class="card-text fs-4 fw-bold">15%</p>
+                <p class="card-text p-2"><small class="text-muted">* Presentar documentacion</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      
+                        <p class="tituloTarjetas" > Venta </p>
+                        <h2 class="tituloTarjetas">Valor ticket $200</h2>
+
+
+
+
+<form class="row g-3" id="formulario">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label"></label>
+    <input type="text" class="form-control is-valid" id="validationServer01"  placeholder="Nombre" value= "" required>
+    <div class="valid-feedback">
+     
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label"></label>
+    <input type="text" class="form-control is-valid" id="validationServer02"  placeholder="Apellido" value="" required>
+    <div class="valid-feedback">
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServerUsername" class="form-label"></label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">Correo</span>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationServer03" class="form-label">Cantidad</label>
+    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer04" class="form-label"> Categoria</label>
+    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <option selected disabled value="">Estudiante </option>
+    <option>Trainee</option>
+    <option> Junior</option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+     
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer05" class="form-label" id="totalPago">Total a pagar </label>
+    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+   
+    </div>
+  </div>
+ 
+  
+  </div>
+
+  <button type="button" class="btn btn-success">Borrar</button> 
+  <button type="button" class="btn btn-success">Resumen </button>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+        <footer class="colorFooter">
+
+            <div class="container">
+                <div class="row">
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/Contactanós.html">Contactanós</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/Prensa.html">Prensa</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/Conferencias.html">Conferencias</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/TerminosyCondiciones.html">Terminos y Condiciones</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/Privacidad.html">Privacidad</a></div>
+                       <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="../pages/Estudiantes.html">Estudiantes</a></div>
+       
+                </div>
+            </div>
+        </footer>
+     
+     
+
+ <script src="../js/bootstrap.bundle.min.js"> </script>
+
+ <script  src="../js/final.js"></script>
+
+
+</body>
+</html>
