@@ -1,7 +1,11 @@
 "use strict";
 
-/*const valorTicket= 200;
+const valorTicket= 200;
 
+
+const emailValido = mail=>{
+    return /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(mail);
+};
 
 //variables
 
@@ -9,14 +13,31 @@ let descuentoEstudiante = 80;
 let descuentoTrainee = 50;
 let descuentoJunior = 15;
 
-
-
-
 let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let mail = document.getElementById("mail");
 let cantidadTicket = document.getElementById("cantidadTicket");
 let categoria = document.getElementById("categoriaSelect");
+
+ /*hecha por mi
+ function completarFormulario (nombre,apellido, mail,categoria,cantidadTicket ){
+
+        if (nombre.value = ""   )
+        alert("Completar Nombre");
+        return;
+
+
+ };
+
+
+console.log(completarFormulario);*/
+
+
+
+
+
+
+
 
 
 
@@ -28,12 +49,8 @@ let btnborrar = document.getElementById("borrar");
 let btnresumen = document.getElementById("totalAPagar");
 
 
-let resumen = document.getElementById("totalAPagar");
 
 
-const emailValido = mail=>{
-    return /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(mail);
-};
 
 
 function resetTotalAPagar(){
@@ -53,116 +70,94 @@ function quitarClaseError(){
 
 };
  
+/*function completar ( formulario){
+    
+    if (nombre.value === "") {
 
- 
-btnresumen.addEventListener("click", () => {
+        alert("el nombre no puede estar vacio");
+        nombre.classList.add("is-invalid");
+        nombre.focus();
         
-
-        if (nombre.value === "") {
-
-            alert("el nombre no puede estar vacio");
-            nombre.classList.add("is-invalid");
-            nombre.focus();
-            return;
-
-
-        }
-
-
-        if (apellido.value === "") {
-
-            alert("el apellido no puede estar vacio");
-            apellido.classList.add("is-invalid");
-            apellido.focus();
-            return;
-
-        }
-
-
-        if (mail.value === "") {
-
-            alert("el mail no puede estar vacio");
-            mail.classList.add("is-invalid");
-            mail.focus();
-            return;
-
-        }
-
-        if (!emailValido(mail.value)) {
-            alert("por favor, escriba un mail valido");
-            mail.classList.add("is-invalid");
-            mail.focus();
-            return;
-
-
-        }
-
-
-
-
-        if (cantidadTicket.value === "") {
-
-            alert("la cantidad de ticket no puede estar vacio");
-            cantidadTicket.classList.add("is-invalid");
-            cantidadTicket.focus();
-            return;
-
-        }
-
-        if (categoria.value === "") {
-
-            alert("la categoria no puede estar vacia");
-            categoria.classList.add("is-invalid");
-            categoria.focus();
-            return;
-
-
-        }
-
-
+        return;
 
 
     }
 
 
+};
+console.log(formulario);*/
+
+btnresumen.addEventListener("click", () => {
+        
+    if (nombre.value === "") {
+        alert("el nombre no puede estar vacio");
+        nombre.classList.add("is-invalid");
+        nombre.focus();
+        return;
+    }
+    if (apellido.value === "") {
+        alert("el apellido no puede estar vacio");
+        apellido.classList.add("is-invalid");
+        apellido.focus();
+        return;
+    }
+    if (mail.value === "") {
+        alert("el mail no puede estar vacio");
+        mail.classList.add("is-invalid");
+        mail.focus();
+        return;
+    }
+    if (!emailValido(mail.value)) {
+        alert("por favor, escriba un mail valido");
+        mail.classList.add("is-invalid");
+        mail.focus();
+        return;
+    }
+    if (cantidadTicket.value === "") {
+        alert("la cantidad de ticket no puede estar vacio");
+        cantidadTicket.classList.add("is-invalid");
+        cantidadTicket.focus();
+        return;
+    }
+    if (categoria.value === "") {
+        alert("la categoria no puede estar vacia");
+        categoria.classList.add("is-invalid");
+        categoria.focus();
+        return;
+    }
+}
 );
-
-
-
-
-
 
 function totalAPagar(){
 
-
-
     if (categoria.value == 0 ){ 
         totalValorTicket = totalValorTicket;
-
-
     }
-
     if (categoria.value == 1 ){ 
         totalValorTicket = totalValorTicket - (descuentoEstudiante / 100 * totalValorTicket);
-
     }
     
     if (categoria.value == 2 ){ 
         totalValorTicket = totalValorTicket - (descuentoTrainee / 100 * totalValorTicket);
-
     }
     else (categoria.value == 3 );{ 
         totalValorTicket = totalValorTicket - (descuentoJunior / 100 * totalValorTicket);
-
         totalPago.innerHTML = totalValorTicket;
-
-
 }
-
 };
 
-btnResumen.addEventListener("click", totalAPagar);
-btnBorrar.addEventListener("click", resetTotalAPagar);*/
+
+        btnResumen.addEventListener("click", totalAPagar);
+        btnBorrar.addEventListener("click", resetTotalAPagar);
+
+
+
+
+
+
+
+
+
 
 
 /*otra opcion
